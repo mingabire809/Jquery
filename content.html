@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+            $("#create_text").click(function(){
+                $("#container p:last").text("<p>Replaced and created this text</p>");
+
+            });
+            $("#create_variable").click(function(){
+               var newText = $('container p:first');
+               $("#container p:last").html(newText);
+                
+            });
+
+        });
+
+    </script>
+    <style>
+      
+    </style>
+</head>
+<body>
+        <a id="create" href="#">Create</a>
+        <a id="create_text" href="#">Create Text</a>
+        <a id="create_variable" href="#">Create Text</a>
+
+        <div id="container">
+        <p>1 The Agile methodology is a way to manage a project by breaking it up into several phases. 
+        It involves constant collaboration with stakeholders and continuous improvement at every stage. 
+        Once the work begins, teams cycle through a process of planning, executing, and evaluating.</p>
+
+        <p>2 The Agile methodology is a way to manage a project by breaking it up into several phases. 
+            It involves constant collaboration with stakeholders and continuous improvement at every stage. 
+            Once the work begins, teams cycle through a process of planning, executing, and evaluating.</p>
+
+            <p>3 a way to manage a project by breaking it up into several phases. 
+                It involves constant collaboration with stakeholders and continuous improvement at every stage. 
+                Once the work begins, teams cycle through a process of planning, executing, and evaluating.</p>    
+            
+                <p>4 The Agile methodology is a way to manage a project by breaking it up into several phases. 
+                    It involves constant collaboration with stakeholders and continuous improvement at every stage. 
+                    Once the work begins, teams cycle through a process of planning, executing, and evaluating.</p>  
+                </div>
+
+</body>
+    
+    
+</html>

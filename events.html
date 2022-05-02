@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+            $("#textBox").on("click", whenMouseIsClicked);
+            $("#textBox").on("mouseleave", whenMouseLeaves);
+
+            function whenMouseIsClicked(){
+                $("#textBox").html("<h1>You clicked here</h1>");
+            }
+            function whenMouseLeaves(){
+                $("#textBox").html("<h1>Where are you going?</h1>");
+            }
+        });
+
+    </script>
+    <style>
+        #textBox{
+            width: 250px;
+            height: 150px;
+            border: 1px solid black;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div id='textBox'>
+        
+
+    </div>
+</body>
+</html>

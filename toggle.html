@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+           $("#toggleMe").click(function(){
+               $("#textBox").toggle(4000, "swing")
+           });
+          
+
+        });
+
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <a href="#" id="toggleMe">Toggle</a>
+   
+</body>
+    <div id='textBox'>
+        <p class="textCopy">The Agile methodology is a way to manage a project by breaking it up into several phases. 
+        It involves constant collaboration with stakeholders and continuous improvement at every stage. 
+        Once the work begins, teams cycle through a process of planning, executing, and evaluating.</p>
+
+    </div>
+    
+</html>
